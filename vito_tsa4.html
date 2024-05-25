@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <link rel="stylesheet" href="./dastyle.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            width: 30%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://pics.craiyon.com/2023-11-14/vYdkHZmhRq-ehJzQMVl4yQ.webp');">
+               <img src="https://i.gifer.com/origin/fe/fe4ebd8a9c0547e94000a9c759acf591_w200.webp" alt="Bulbasaur">
+            </div>
+            <div class="card-body">
+                <h2>Bulbasaur</h2>
+                <p>Type: <span class="type grass">Grass</span> <span class="type poison">Poison</span></p>
+                <p>Bulbasaur (Japanese: フシギダネ Fushigidane) is a dual-type Grass/Poison Pokémon introduced in Generation I.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://i.gifer.com/3EME.gif');">
+                <img src="https://24.media.tumblr.com/69be7a4c5dd5fc81a5c40eeedfb3f475/tumblr_mr89xphMKP1ra3pdvo1_500.gif" alt="Pikachu">
+            </div>
+            <div class="card-body">
+                <h2>Pikachu</h2>
+                <p>Type: <span class="type Electric">Electric</span></p>
+                <p>Pikachu (Japanese: ピカチュウ Pikachū) is an Electric-type Pokémon introduced in Generation I.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://i.redd.it/rtlyfb04e9471.gif');">
+                <img src="https://static.wikia.nocookie.net/supersmashbrosfanon/images/e/eb/Toon_Charmander.gif/revision/latest/thumbnail/width/360/height/360?cb=20101126195022" alt="Charmander">
+            </div>
+            <div class="card-body">
+                <h2>Charmander</h2>
+                <p>Type: <span class="type fire">Fire</span></p>
+                <p>Charmander (Japanese: ヒトカゲ Hitokage) is a Fire-type Pokémon introduced in Generation I.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://gifdb.com/images/high/boiling-water-bubbles-cartoon-65zw0jns86htivzc.gif');">
+                <img src="https://i.gifer.com/origin/d8/d83e9951f28fc811c1166b16dcaec930_w200.gif" alt="Squirtle">
+            </div>
+            <div class="card-body">
+                <h2>Squirtle</h2>
+                <p>Type: <span class="type water">Water</span></p>
+                <p>Squirtle (Japanese: ゼニガメ Zenigame) is a Water-type Pokémon introduced in Generation I.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://art.pixilart.com/0458a0239dcf4f3.gif');">
+                <img src="https://i.gifer.com/origin/e2/e28b5d68adb851481a8c7a2aa6b87e49_w200.gif" alt="Snorlax">
+            </div>
+            <div class="card-body">
+                <h2>Snorlax</h2>
+                <p>Type: <span class="type stomach">Stomach</span></p>
+                <p>Snorlax (Japaneseカビゴン Kabigon) is a Its stomach's digestive juices can dissolve any kind of poison. It can even eat things off the ground. Pokémon introduced in Generation I.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" style="background-image: url('https://www.bing.com/th/id/OGC.86f4b4bebc47af3912f5ff7e060f4826?pid=1.7&rurl=https%3a%2f%2fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2ff%2f6fd4977c-98be-4bb3-88f3-324d1f0b4066%2fdc9w2sn-68b3ec15-48d5-490d-9bee-e30e6b28a0cc.gif%3ftoken%3deyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmZDQ5NzdjLTk4YmUtNGJiMy04OGYzLTMyNGQxZjBiNDA2NlwvZGM5dzJzbi02OGIzZWMxNS00OGQ1LTQ5MGQtOWJlZS1lMzBlNmIyOGEwY2MuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.50ze-cPPUoBd18U4yKaoVlC9vpV3DWE4458zOhXsQrY&ehk=UCEoTewef6e6vdmp4vz9VjuLBVwl8rcA1C5JdSJ%2bPIA%3d');">
+                <img src="https://th.bing.com/th/id/R.2d1e8b2d9f918d0f8a4cf19ac2210ce6?rik=XDJ6WCf1rUODJQ&riu=http%3a%2f%2f38.media.tumblr.com%2f551a1a074aa1ee1424e218a3914f6130%2ftumblr_n9dzjm0pJC1s3bc1no2_500.gif&ehk=%2fis7hxY7s%2bkJvQbcsZGn%2bFvCUnoPVpOyccpSRDx1RUs%3d&risl=&pid=ImgRaw&r=0"width=300 alt="Snorlax">
+            </div>
+            <div class="card-body">
+                <h2>Dialga</h2>
+                <p>Type: <span class="type steel">Steel</span> <span class="type dragon">Dragon</span></p>
+                <p>Dialga (Japaneseディアルガ Dialga) is a dual-type Steel/Dragon legendary Pokémon that made its first appearance in the fourth generation games Diamond and Pearl. It is the one of the Pokémon of Myth.</p>
+                <button class="add">Add Pokemon</button>
+                <button class="release">Release Pokemon</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
