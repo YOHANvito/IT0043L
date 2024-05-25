@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://th.bing.com/th/id/R.f0416845b1bbc7ababa5e2274b879ad8?rik=A4gh8o7QPFUZIA&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fpokemon_pokeball_red-wallpaper-800x480.jpg&ehk=hEQl1v7drVdPROF1MqBAYGM5OeY%2bXeYJCsq0%2bLtfytM%3d&risl=&pid=ImgRaw&r=0");
+    background-color: #ffeb3b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Add padding to prevent cutting off cards */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    background-image: url("https://i.pinimg.com/736x/a4/99/1a/a4991a5729c6ada33e90c4253b44acea.jpg");
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add margin-bottom to separate rows */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card img.pikachu {
+    width: 200px; /* Resize Pikachu image */
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card .add,
+.card .release {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card .release {
+    background-color: #f44336;
+    color: white;
+}
+
+.type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(247, 241, 241);
+    margin-right: 5px;
+}
+
+.type.grass {
+    background-color: #4CAF50;
+}
+
+.type.poison {
+    background-color: #9C27B0;
+}
+.type.Electric {
+    background-color:yellow
+}
+
+.type.fire {
+    background-color: #FF5722;
+}
+
+.type.water {
+    background-color: #2196F3;
+}
+.type.stomach {
+    background-color:blue
+}
+.type.steel {
+    background-color:silver
+}
+.type.dragon {
+    background-color:purple
+}
+
+
+
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add {
+    background-color: #2196F3;
+    color: white;
+}
+
+button.release {
+    background-color: #F44336;
+    color: white;
+}
